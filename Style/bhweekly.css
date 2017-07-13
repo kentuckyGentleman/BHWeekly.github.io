@@ -83,9 +83,6 @@ a {
   color: #0496ff;
   text-decoration: none; }
 
-.navLinkOverlay {
-  font-size: 20px; }
-
 aside {
   position: fixed;
   width: 100%;
@@ -106,14 +103,19 @@ aside {
 nav {
   padding: 0 20px;
   text-align: center; }
+  nav .navContainer {
+    padding: 10px 0; }
   nav .navSubAd {
-    margin-bottom: 10px;
-    padding: 10px 0;
-    border-bottom: 1px solid #b3b3b3; }
-  nav .bhWeekly_logo_nav {
+    border-bottom: 1px solid #b3b3b3;
+    padding-bottom: 10px; }
+  nav .logoContainer {
     width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #b3b3b3; }
+    border-bottom: 1px solid #b3b3b3;
+    padding: 10px 0; }
+  nav .bhWeekly_logo_nav {
+    width: 100%; }
+  nav .bhWeekly_logo_nav_horizontal {
+    width: 0; }
   nav .navItems {
     display: table;
     width: 100%;
@@ -121,10 +123,10 @@ nav {
   nav .navItemsHolder {
     display: table-cell;
     vertical-align: middle; }
-  nav ul li {
+  nav li {
     padding: 20px 0; }
-  nav ul li:last-child {
-    border: 0; }
+  nav .navLinkOverlay {
+    font-size: 20px; }
 
 button.toggle-overlay {
   position: fixed;
@@ -166,6 +168,65 @@ a.close span:before {
 a.close span:after {
   transform: rotate(-45deg); }
 
+@media (min-width: 375px) {
+  nav .bhWeekly_logo_nav {
+    width: 350px; } }
+@media (min-width: 414px) {
+  nav .logoContainer {
+    padding: 23px 0; } }
+@media (min-width: 975px) {
+  aside {
+    height: initial;
+    position: relative;
+    opacity: 1;
+    visibility: visible; }
+
+  nav .navContainer {
+    border-bottom: 1px solid #b3b3b3;
+    text-align: justify;
+    direction: rtl; }
+  nav .navContainer:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  nav .navSubAd {
+    display: inline-block;
+    width: initial;
+    border: none;
+    padding: 0; }
+  nav .logoContainer {
+    height: initial;
+    width: initial;
+    border: none;
+    display: inline-block;
+    padding: 0 60px; }
+  nav .bhWeekly_logo_nav {
+    display: none; }
+  nav .bhWeekly_logo_nav_horizontal {
+    width: 150px; }
+  nav .navItems {
+    display: inline-block;
+    height: initial;
+    width: initial;
+    direction: initial; }
+  nav .navSubAd,
+  nav .logoContainer,
+  nav .navItems {
+    vertical-align: middle; }
+  nav .navItemsHolder {
+    display: block; }
+  nav li {
+    display: inline-block;
+    padding: 0 25px 0 0; }
+  nav li:last-child {
+    padding: 0; }
+  nav .navLinkOverlay {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a; }
+
+  button.toggle-overlay {
+    display: none; } }
 footer {
   background-color: #f6f2f1 !important;
   padding: 30px 0 50px 0; }
