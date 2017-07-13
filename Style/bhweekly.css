@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,500|Source+Serif+Pro");
+.container {
+  padding: 0 30px;
+  max-width: 960px;
+  margin: 0 auto; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  font-size: 42px;
+  color: #4a4a4a;
+  line-height: 42px; }
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #4a4a4a; }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4a4a4a; }
+
+p {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 30px; }
+
+.footerText {
+  font-size: 16px;
+  line-height: 22px; }
+
+.footerTextSecondary {
+  font-size: 14px;
+  line-height: 18px; }
+
+button {
+  border-radius: 80px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  width: 137px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: none;
+  display: inline-block; }
+
+.buttonMain {
+  background-color: #0496ff;
+  color: white;
+  border: none; }
+
+.buttonSecondary {
+  background-color: transparent !important;
+  color: #0496ff !important;
+  border: 2px solid #0496ff;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.buttonTertiary {
+  background-color: transparent;
+  color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.buttonLarge {
+  width: 250px; }
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0496ff;
+  text-decoration: none; }
+
+.navLinkOverlay {
+  font-size: 20px; }
+
+aside {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transition: all .5s ease;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center; }
+
+.open {
+  opacity: 1;
+  visibility: visible; }
+
+nav {
+  padding: 0 20px;
+  text-align: center; }
+  nav .navSubAd {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #b3b3b3; }
+  nav .bhWeekly_logo_nav {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b3b3b3; }
+  nav .navItems {
+    display: table;
+    width: 100%;
+    height: 65%; }
+  nav .navItemsHolder {
+    display: table-cell;
+    vertical-align: middle; }
+  nav ul li {
+    padding: 20px 0; }
+  nav ul li:last-child {
+    border: 0; }
+
+button.toggle-overlay {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  z-index: 1;
+  padding: 0;
+  width: 100%;
+  height: 51px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0496ff;
+  border-radius: 0;
+  border: none;
+  background-color: white; }
+
+.outer-close {
+  background-color: white;
+  border-top: 1px solid #0496ff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 51px;
+  cursor: pointer; }
+
+a.close span,
+a.close span:before,
+a.close span:after {
+  border-radius: 4px;
+  height: 2px;
+  width: 30px;
+  background: red;
+  display: block;
+  content: ''; }
+a.close span {
+  background: transparent; }
+a.close span:before {
+  transform: rotate(45deg); }
+a.close span:after {
+  transform: rotate(-45deg); }
+
+footer {
+  background-color: #f6f2f1 !important;
+  padding: 30px 0 50px 0; }
+  footer hr {
+    color: #4a4a4a; }
+
+#emailBanner,
+.footerNav,
+.footerContact,
+.footerAdjudicated {
+  margin-bottom: 50px; }
+
+#emailBanner {
+  border: 2px solid #4a4a4a;
+  padding: 50px 20px;
+  text-align: center; }
+  #emailBanner h1 {
+    font-size: 30px;
+    line-height: 28px; }
+  #emailBanner p {
+    padding: 35px 0;
+    max-width: 365px;
+    margin: 0 auto; }
+  #emailBanner button {
+    max-width: 250px; }
+
+.footerNav {
+  display: inline-block; }
+
+.footerList {
+  padding: 8px 0;
+  float: left; }
+  .footerList li {
+    margin: 0 0 24px 0; }
+  .footerList li:last-child {
+    margin: 0; }
+
+.footerButtons {
+  float: left;
+  margin-left: 40px; }
+  .footerButtons button {
+    display: block;
+    margin-bottom: 8px; }
+
+.footerContact {
+  max-width: 169px; }
+  .footerContact p span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; }
+
+.bhlogo {
+  width: 42px;
+  margin-top: 25px; }
+
+.footerAdjudicated {
+  max-width: 224px;
+  display: inline-block; }
+
+.copyright {
+  border-top: 2px solid #4a4a4a;
+  padding-top: 50px; }
+  .copyright .bhweekly_logo {
+    width: 146px;
+    margin-bottom: 15px; }
+  .copyright .serving_logo {
+    width: 260px;
+    margin-top: 15px; }
+
+@media (min-width: 425px) {
+  #emailBanner {
+    padding: 50px 30px; } }
+@media (min-width: 572px) {
+  .footerNav,
+  .footerContact,
+  .footerAdjudicated {
+    vertical-align: top; }
+
+  .footerNav,
+  .footerContact {
+    display: inline-block;
+    margin-bottom: 0; }
+
+  .footerAdjudicated {
+    margin-top: 50px; }
+
+  .footerContact {
+    padding: 0 40px; } }
+@media (min-width: 800px) {
+  #emailBanner {
+    text-align: justify;
+    padding: 30px; }
+    #emailBanner h1,
+    #emailBanner p,
+    #emailBanner button {
+      display: inline-block;
+      vertical-align: top; }
+    #emailBanner h1,
+    #emailBanner p {
+      text-align: left; }
+    #emailBanner h1 {
+      width: 153px; }
+    #emailBanner p {
+      padding: 8px 0 0 0; }
+    #emailBanner button {
+      margin-top: 5px; }
+
+  #emailBanner:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+  .footerNavContactAd {
+    text-align: justify; }
+
+  .footerNavContactAd:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+  .footerAdjudicated {
+    margin-top: 0; }
+    .footerAdjudicated p {
+      text-align: left; }
+
+  .copyright p,
+  .copyright .serving_logo {
+    float: right; }
+  .copyright p {
+    padding-top: 10px; }
+  .copyright .serving_logo {
+    margin: 0;
+    padding: 15px 30px 0 0; } }

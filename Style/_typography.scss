@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,500|Source+Serif+Pro');
+
+// BASIC -------------------------------------------------------------------------------------------
+h1{
+	font-family: $headline;
+	font-weight: normal;
+	font-size: 42px;
+	color: $black;
+	line-height: 42px;
+}
+
+h2{
+	font-family: $subhead;
+	font-weight: 500;
+	font-size: 18px;
+	color: $black;
+}
+
+h3{
+	font-family: $subhead;
+	font-weight: 400;
+	font-size: 16px;
+	color: $black;
+}
+
+p{
+	font-family: $body;
+	font-weight: 400;
+	font-size: 18px;
+	color: $black;
+	line-height: 30px;
+}
+
+
+// NAV -------------------------------------------------------------------------------------------
+
+
+
+// FOOTER -------------------------------------------------------------------------------------------
+
+.footerText{
+		font-size: 16px;
+		line-height: 22px;
+}
+
+.footerTextSecondary{
+		font-size: 14px;
+		line-height: 18px;
+}
+

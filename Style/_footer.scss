@@ -1,0 +1,210 @@
+// FOOTER GENERAL -----------------------------------------
+footer{
+	background-color: $creme !important;
+	padding: 30px 0 50px 0;
+
+	hr{
+		color: $black;
+	}
+}
+
+#emailBanner,
+	.footerNav,
+	.footerContact,
+	.footerAdjudicated{
+		margin-bottom: 50px;
+}
+
+//EMAIL BANNER -------------------------------------------
+#emailBanner{
+	border: 2px solid $black;
+	padding: 50px 20px;
+	text-align: center;
+
+	h1{
+		font-size: 30px;
+		line-height: 28px;
+	}
+
+	p{
+		padding: 35px 0;
+		max-width: 365px;
+		margin: 0 auto;
+	}
+
+	button{
+		max-width: 250px;
+	}
+}
+
+
+// NAV/CONTACT/ADJUDICATED CONTAINER -------------------------------------
+// .footerNavContactAd{
+// 		vertical-align: top;
+// }
+
+// NAV -------------------------------------------------------------------
+.footerNav{
+	display: inline-block;
+}
+
+.footerList{
+	padding: 8px 0;
+	float: left;
+	li{
+		margin: 0 0 24px 0;
+	}
+	li:last-child{
+		margin: 0;
+	}
+}
+
+.footerButtons{
+	float: left;
+	margin-left: 40px;
+	button{
+		display: block;
+		margin-bottom: 8px;
+	}
+}
+
+
+// CONTACT  ---------------------------------------------------------------
+.footerContact{
+	max-width: 169px;
+
+	p span{
+		font-family: $subhead;
+		font-weight: 500;
+	}
+}
+
+.bhlogo{
+	width: 42px;
+	margin-top: 25px;
+}
+
+.footerAdjudicated{
+	max-width: 224px;
+	display: inline-block;
+}
+
+// BH LOGO AND COPYRIGHT --------------------------------------------------
+.copyright{
+	border-top: 2px solid $black;
+	padding-top: 50px;
+
+	.bhweekly_logo{
+		width: 146px;
+		margin-bottom: 15px;
+	}
+
+	.serving_logo{
+		width: 260px;
+		margin-top: 15px;
+	}
+}
+
+// MEDIA QUERIES ----------------------------------------------------------
+@media (min-width: 425px){
+	#emailBanner{
+		padding: 50px 30px;
+	}
+}
+
+@media (min-width: 572px){
+	.footerNav,
+	.footerContact,
+	.footerAdjudicated{
+		vertical-align: top;
+	}
+
+	.footerNav,
+	.footerContact{
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.footerAdjudicated{
+		margin-top: 50px;
+	}
+
+	.footerContact{
+		padding: 0 40px;
+	}
+
+	
+}
+
+@media (min-width: 800px){
+	#emailBanner{
+		text-align: justify;
+		padding: 30px;
+
+		h1,
+		p,
+		button{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		h1,
+		p{
+			text-align: left;
+		}
+
+		h1{
+			width: 153px;
+		}
+
+		p{
+			padding: 8px 0 0 0;
+		}
+
+		button{
+			margin-top: 5px;
+		}
+	}
+
+	#emailBanner:after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	.footerNavContactAd{
+		text-align: justify;
+	}
+
+	.footerNavContactAd:after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	.footerAdjudicated{
+		margin-top: 0;
+
+		p{
+			text-align: left;
+		}
+	}
+
+	.copyright{
+		p,
+		.serving_logo{
+			float: right;
+		}
+
+		p{
+			padding-top: 10px;
+		}
+
+		.serving_logo{
+			margin: 0;
+			padding: 15px 30px 0 0;
+		}
+	}
+}
+
+

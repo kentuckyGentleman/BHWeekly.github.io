@@ -1,0 +1,53 @@
+//BUTTONS ------------------------------------------------------------------------------------------- 
+button{
+	border-radius: 80px;
+	font-family: $subhead;
+	text-align: center;
+	font-size: 13px;
+	width: 137px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+  	box-shadow: none;
+  	display: inline-block;
+}
+
+.buttonMain{
+	background-color: $blue;
+	color: white;
+	border: none;
+}
+
+.buttonSecondary{
+	background-color: transparent !important;
+	color: $blue !important;
+	border: 2px solid $blue;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.buttonTertiary{
+	background-color: transparent;
+	color: $black;
+	border: 2px solid $black;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.buttonLarge{
+	width: 250px;
+}
+
+a{
+	font-family: $subhead;
+	font-weight: 400;
+	font-size: 16px;
+	color: $blue;
+	text-decoration: none;
+}
+
+// NAV -------------------------------------------------------------------------------------------
+
+// Links
+.navLinkOverlay{
+	font-size: 20px;
+}
