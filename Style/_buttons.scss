@@ -1,5 +1,16 @@
+// LINKS -----------------------------------------------------------------
+a{
+	font-family: $subhead;
+	font-weight: 400;
+	font-size: 16px;
+	color: $blue;
+	text-decoration: none;
+	display: block;
+}
+
+
 //BUTTONS ------------------------------------------------------------------------------------------- 
-button{
+.button{
 	border-radius: 80px;
 	font-family: $subhead;
 	text-align: center;
@@ -9,6 +20,10 @@ button{
 	padding-bottom: 8px;
   	box-shadow: none;
   	display: inline-block;
+
+  	a{
+  		font-size: 13px;
+  	}
 }
 
 .buttonMain{
@@ -33,17 +48,15 @@ button{
 	padding-bottom: 6px;
 }
 
-.buttonLarge{
-	width: 250px;
+.buttonStaffInd{
+	background-color: white;
+	color: $blue;
 }
 
-a{
-	font-family: $subhead;
-	font-weight: 400;
-	font-size: 16px;
-	color: $blue;
-	text-decoration: none;
+.buttonLarge{
+	max-width: 250px;
 }
+
 
 
 

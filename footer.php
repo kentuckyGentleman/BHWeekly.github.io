@@ -6,7 +6,7 @@
 			<p class="footerText">
 				Sign up for Beverly Hills Weekly Email to be notified when the latest issue is hot off the presses.
 			</p>
-			<button class="buttonSecondary">Sign up</button>
+			<div class="button buttonSecondary"><a href="/email.php">Sign Up</a></div>
 		</div>
 		<div class="footerNavContactAd">
 			<div class="footerNav">
@@ -17,8 +17,8 @@
 					<li><a href="/contact.php">Contact</a></li>
 				</ul>
 				<div class="footerbuttons">
-					<button class="buttonSecondary">Subscribe</button>
-					<button class="buttonMain">Advertise with us</button>
+					<div class="button buttonSecondary"><a href="/subscribe.php">Subscribe</a></div>
+					<div class="button buttonMain"><a href="/advertise.php">Advertise with us</a></div>
 				</div>
 			</div>
 			<div class="footerContact">

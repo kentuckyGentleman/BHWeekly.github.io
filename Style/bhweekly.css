@@ -2,24 +2,113 @@
 .container {
   padding: 0 30px;
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+  @media (min-width: 700px) {
+    .container {
+      padding: 0 60px; } }
+  @media (min-width: 700px) {
+    .container {
+      padding: 0 90px; } }
+  @media (min-width: 1100px) {
+    .container {
+      padding: 0; } }
 
 .group:after {
   content: "";
   display: table;
   clear: both; }
 
+.hrHeavy {
+  height: 2px;
+  background-color: #4a4a4a; }
+
+.hrLight {
+  height: 1px;
+  background-color: #b3b3b3; }
+
+.vrLight {
+  width: 1px;
+  background-color: #b3b3b3; }
+
+.sectionHeader {
+  position: relative;
+  overflow: hidden; }
+  .sectionHeader h1 {
+    margin-bottom: 15px; }
+  .sectionHeader p {
+    margin-bottom: 25px; }
+
+.staffBackground {
+  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background-size: cover; }
+
+.issuesBackground {
+  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background-size: cover; }
+
+.contactBackground {
+  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background-size: cover; }
+
+.advertiseBackground {
+  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background-size: cover; }
+
+.sectionHeaderLogo {
+  border-bottom: 1px solid #b3b3b3;
+  padding: 16px 0 10px  0;
+  text-align: center; }
+  .sectionHeaderLogo img {
+    width: 162px; }
+
+.sectionHeaderInfo h1 {
+  padding: 55px 0 0 0; }
+
+.sectionHeaderBlue {
+  color: #0496ff; }
+
+.sectionHeaderImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center; }
+  .sectionHeaderImg img {
+    height: 100%; }
+
+.stepIcon {
+  position: relative;
+  border-radius: 80px;
+  background-color: #4a4a4a;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font-family: "Roboto", sans-serif; }
+
+.stepIconNumber {
+  display: block;
+  position: absolute;
+  top: 8;
+  left: 10; }
+
+@media (min-width: 768px) {
+  .sectionHeaderInfo h1 {
+    padding: 135px 0 0 0; } }
+@media (min-width: 975px) {
+  .sectionHeaderLogo {
+    display: none; } }
 h1 {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
   font-size: 42px;
   color: #4a4a4a;
-  line-height: 42px; }
+  line-height: 44px; }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 24px;
   color: #4a4a4a; }
 
 h3 {
@@ -33,7 +122,15 @@ p {
   font-weight: 400;
   font-size: 18px;
   color: #4a4a4a;
-  line-height: 30px; }
+  line-height: 30px;
+  max-width: 500;
+  display: block; }
+
+.finePrint {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px; }
 
 .footerText {
   font-size: 16px;
@@ -43,7 +140,19 @@ p {
   font-size: 14px;
   line-height: 18px; }
 
-button {
+@media (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+    line-height: 59px; } }
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0496ff;
+  text-decoration: none;
+  display: block; }
+
+.button {
   border-radius: 80px;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -53,6 +162,8 @@ button {
   padding-bottom: 8px;
   box-shadow: none;
   display: inline-block; }
+  .button a {
+    font-size: 13px; }
 
 .buttonMain {
   background-color: #0496ff;
@@ -73,15 +184,12 @@ button {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-.buttonLarge {
-  width: 250px; }
+.buttonStaffInd {
+  background-color: white;
+  color: #0496ff; }
 
-a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #0496ff;
-  text-decoration: none; }
+.buttonLarge {
+  max-width: 250px; }
 
 aside {
   position: fixed;
@@ -203,7 +311,7 @@ a.close span:after {
   nav .bhWeekly_logo_nav {
     display: none; }
   nav .bhWeekly_logo_nav_horizontal {
-    width: 150px; }
+    width: 135px; }
   nav .navItems {
     display: inline-block;
     height: initial;
@@ -229,7 +337,7 @@ a.close span:after {
     display: none; } }
 footer {
   background-color: #f6f2f1 !important;
-  padding: 30px 0 50px 0; }
+  padding: 30px 0 99px 0; }
   footer hr {
     color: #4a4a4a; }
 
@@ -267,7 +375,7 @@ footer {
 .footerButtons {
   float: left;
   margin-left: 40px; }
-  .footerButtons button {
+  .footerButtons .button {
     display: block;
     margin-bottom: 8px; }
 
@@ -315,29 +423,6 @@ footer {
   .footerContact {
     padding: 0 40px; } }
 @media (min-width: 800px) {
-  #emailBanner {
-    text-align: justify;
-    padding: 30px; }
-    #emailBanner h1,
-    #emailBanner p,
-    #emailBanner button {
-      display: inline-block;
-      vertical-align: top; }
-    #emailBanner h1,
-    #emailBanner p {
-      text-align: left; }
-    #emailBanner h1 {
-      width: 153px; }
-    #emailBanner p {
-      padding: 8px 0 0 0; }
-    #emailBanner button {
-      margin-top: 5px; }
-
-  #emailBanner:after {
-    content: '';
-    display: inline-block;
-    width: 100%; }
-
   .footerNavContactAd {
     text-align: justify; }
 
@@ -359,3 +444,247 @@ footer {
   .copyright .serving_logo {
     margin: 0;
     padding: 15px 30px 0 0; } }
+@media (min-width: 950px) {
+  #emailBanner {
+    text-align: justify;
+    padding: 30px 30px 35px 30px; }
+    #emailBanner h1,
+    #emailBanner p,
+    #emailBanner .button {
+      display: inline-block;
+      vertical-align: top; }
+    #emailBanner h1,
+    #emailBanner p {
+      text-align: left; }
+    #emailBanner h1 {
+      width: 153px; }
+    #emailBanner p {
+      padding: 8px 0 0 0; }
+    #emailBanner .button {
+      margin-top: 5px; }
+
+  #emailBanner:after {
+    content: '';
+    display: inline-block;
+    width: 100%; } }
+@media (min-width: 975px) {
+  footer {
+    padding-bottom: 45px; } }
+.staffMembers {
+  margin: 60px 0;
+  text-align: center; }
+
+.staffMembers:after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+
+.staffHeader {
+  text-align: center; }
+
+.staffInd {
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 500px;
+  text-align: center;
+  vertical-align: top;
+  border-bottom: 1px solid #b3b3b3; }
+  .staffInd .staffPortrait,
+  .staffInd h3 {
+    margin-bottom: 15px; }
+  .staffInd .staffPortrait {
+    width: 106px; }
+  .staffInd h2 {
+    margin-bottom: 5px; }
+  .staffInd h3 {
+    color: #0496ff; }
+  .staffInd .hrHeavy {
+    width: 79px;
+    margin: 0 auto 25px auto; }
+  .staffInd p {
+    margin-bottom: 25px; }
+
+.staffInd:nth-child(4) {
+  border: none;
+  padding-bottom: 0; }
+
+@media (min-width: 768px) {
+  .staffMembers {
+    margin: 135px 0; }
+
+  .staffInd {
+    padding: 80px 0; } }
+@media (min-width: 1000px) {
+  .staffMembers {
+    text-align: justify; }
+
+  .staffInd {
+    width: 261px;
+    text-align: left;
+    display: inline-block;
+    border: none; }
+    .staffInd .hrHeavy {
+      margin: 0 0 25px 0; } }
+.indStaffContainer {
+  margin: 60px auto;
+  max-width: 650px; }
+
+.indStaffHeader {
+  background-color: #0496ff;
+  margin-bottom: 30px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+  box-sizing: border-box; }
+  .indStaffHeader .staffPortrait {
+    width: 106px; }
+  .indStaffHeader h1,
+  .indStaffHeader h3 {
+    color: white; }
+  .indStaffHeader h1 {
+    font-size: 30px; }
+  .indStaffHeader h3,
+  .indStaffHeader .hrLight {
+    margin-bottom: 15px; }
+  .indStaffHeader .hrLight {
+    background-color: white; }
+
+.staffBio p {
+  margin: 0 auto;
+  max-width: initial; }
+
+.meetNext {
+  border-top: 1px solid #b3b3b3;
+  padding: 30px 30px 40px 30px;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: all .75s ease-in-out;
+  transition: all .75s ease-in-out;
+  box-sizing: border-box; }
+  .meetNext h1,
+  .meetNext h2,
+  .meetNext h3 {
+    -webkit-transition: all .75s ease-in-out;
+    transition: all .75s ease-in-out; }
+  .meetNext h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #0496ff; }
+  .meetNext h2 {
+    text-align: center;
+    margin-bottom: 30px; }
+
+.meetNextPerson {
+  text-align: center; }
+  .meetNextPerson .staffPortrait {
+    width: 106px;
+    margin-bottom: 12px; }
+
+@media (min-width: 550px) {
+  .indStaffHeader {
+    float: left;
+    width: 305px;
+    margin: 0 30px 0 0;
+    text-align: left; }
+
+  .meetNext h2 {
+    text-align: left; } }
+@media (min-width: 768px) {
+  .indStaffContainer {
+    margin: 135px auto; }
+
+  .meetNext {
+    padding-bottom: 90px; }
+
+  .meetNext:hover {
+    background-color: #0496ff;
+    border-top: 1px solid #0496ff; }
+    .meetNext:hover h1,
+    .meetNext:hover h2,
+    .meetNext:hover h3 {
+      color: white; } }
+@media (min-width: 1045px) {
+  .indStaffContainer {
+    max-width: initial;
+    text-align: justify; }
+
+  .indStaffContainer:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+  .indStaffHeader {
+    margin-right: 60px; }
+
+  .indStaffHeader,
+  .staffBio {
+    display: inline-block; }
+
+  .staffBio p {
+    max-width: 500px;
+    text-align: left; }
+
+  .meetNext {
+    max-width: initial; } }
+.advContainer {
+  padding: 50px 0;
+  text-align: center;
+  position: relative; }
+
+.advContainer:after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+
+.advStep {
+  box-sizing: border-box;
+  margin: 30px auto 0 auto;
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%; }
+
+.vrLight {
+  width: 0; }
+
+.advStepInfo {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  max-width: 300px; }
+
+.finePrint {
+  margin: 0 auto; }
+
+.button {
+  margin: 25px 0; }
+
+@media (min-width: 700px) {
+  .advStepInfo {
+    padding: 80px 0; } }
+@media (min-width: 800px) {
+  .advContainer {
+    text-align: justify;
+    padding: 135px 0; }
+
+  .advHeader {
+    text-align: center;
+    margin-bottom: 80px; }
+
+  .advStep,
+  .hrLight {
+    vertical-align: top; }
+
+  .advStep {
+    width: 47%;
+    margin-top: 0;
+    border: none; }
+
+  .hrLight {
+    display: inline-block;
+    width: 1px;
+    height: 400px; }
+
+  .advStepInfo {
+    padding: 80px 20px; } }

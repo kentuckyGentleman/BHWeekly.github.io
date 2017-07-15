@@ -3,6 +3,19 @@
 	padding: 0 30px;
 	max-width: 960px;
 	margin: 0 auto;
+	position: relative;
+
+	@media (min-width: 700px){
+		padding: 0 60px;
+	}
+
+	@media (min-width: 700px){
+		padding: 0 90px;
+	}
+
+	@media (min-width: 1100px){
+		padding: 0;
+	}
 }
 
 // CLEARFIX ------------------------------------------
@@ -12,5 +25,128 @@
   clear: both;
 }
 
-// LISTS ---------------------------------------------
+// hr ---------------------------------------------
+.hrHeavy{
+	height: 2px;
+	background-color: $black;
+}
+
+.hrLight{
+	height: 1px;
+	background-color: $gray;
+}
+
+.vrLight{
+	width: 1px;
+	background-color: $gray;
+}
+
+
+// SECTION HEADER ---------------------------------------------
+.sectionHeader{
+	position: relative;
+	overflow: hidden;
+
+	h1{
+		margin-bottom: 15px;
+	}
+
+	p{
+		margin-bottom: 25px;
+	}
+}
+
+
+// SECTION HEADER BACKGROUND IMAGES ------------------------------
+.staffBackground{
+	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background-size: cover;
+}
+
+.issuesBackground{
+	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background-size: cover;
+}
+
+.contactBackground{
+	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background-size: cover;
+}
+
+.advertiseBackground{
+	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background-size: cover;
+}
+
+.sectionHeaderLogo{
+	border-bottom: 1px solid $gray;
+	padding: 16px 0 10px  0;
+	text-align: center;
+	
+	img{
+		width: 162px;
+	}
+}
+
+.sectionHeaderInfo{
+
+	h1{
+		padding: 55px 0 0 0;
+	}
+}
+
+.sectionHeaderBlue{
+	color: $blue;
+}
+
+.sectionHeaderImg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+
+	img{
+		height: 100%;
+	}
+}
+
+
+// STEP ICONS -----------------------------------------
+.stepIcon{
+	position: relative;
+	border-radius: 80px;
+	background-color: $black;
+	color: white;
+	width: 30px;
+	height: 30px;
+	font-family: $subhead;
+}
+
+.stepIconNumber{
+	display: block;
+	position: absolute;
+	top: 8;
+	left: 10;
+}
+
+
+// MEDIA QUERIES ------------------------------
+@media (min-width: 768px){
+
+	.sectionHeaderInfo{
+
+		h1{
+			padding: 135px 0 0 0;
+		}
+	}
+
+}
+
+
+@media (min-width: 975px){
+
+	.sectionHeaderLogo{
+		display: none;
+	}
+}
 

@@ -1,7 +1,7 @@
 // FOOTER GENERAL -----------------------------------------
 footer{
 	background-color: $creme !important;
-	padding: 30px 0 50px 0;
+	padding: 30px 0 99px 0;
 
 	hr{
 		color: $black;
@@ -62,7 +62,7 @@ footer{
 .footerButtons{
 	float: left;
 	margin-left: 40px;
-	button{
+	.button{
 		display: block;
 		margin-bottom: 8px;
 	}
@@ -137,40 +137,7 @@ footer{
 }
 
 @media (min-width: 800px){
-	#emailBanner{
-		text-align: justify;
-		padding: 30px;
-
-		h1,
-		p,
-		button{
-			display: inline-block;
-			vertical-align: top;
-		}
-
-		h1,
-		p{
-			text-align: left;
-		}
-
-		h1{
-			width: 153px;
-		}
-
-		p{
-			padding: 8px 0 0 0;
-		}
-
-		button{
-			margin-top: 5px;
-		}
-	}
-
-	#emailBanner:after{
-		content: '';
-		display: inline-block;
-		width: 100%;
-	}
+		
 
 	.footerNavContactAd{
 		text-align: justify;
@@ -205,6 +172,54 @@ footer{
 			padding: 15px 30px 0 0;
 		}
 	}
+}
+
+
+@media (min-width: 950px){
+	#emailBanner{
+		text-align: justify;
+		padding: 30px 30px 35px 30px;
+
+		h1,
+		p,
+		.button{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		h1,
+		p{
+			text-align: left;
+		}
+
+		h1{
+			width: 153px;
+		}
+
+		p{
+			padding: 8px 0 0 0;
+		}
+
+		.button{
+			margin-top: 5px;
+		}
+	}
+
+	#emailBanner:after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+}
+
+
+@media (min-width: 975px){
+
+	footer{
+		padding-bottom: 45px;
+	}
+
 }
 
 

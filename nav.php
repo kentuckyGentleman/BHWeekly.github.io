@@ -6,8 +6,8 @@
   <nav>
 	  	<div class="navContainer">
 	  		<div class="navSubAd">
-	  			<button class="buttonSecondary">Subscribe</button>
-	  		  	<button class="buttonMain">Advertise with us</button>
+	  			<div class="button buttonSecondary"><a href="/subscribe.php">Subscribe</a></div>
+	  		  	<div class="button buttonMain"><a href="/advertise.php">Advertise with us</a></div>
 		  	</div>
 		  	<div class="logoContainer">
 		  		<img class="bhWeekly_logo_nav" src="/img/logo/bhWeekly_large.png">
@@ -17,7 +17,7 @@
 			   	<div class="navItemsHolder">
 			   		<ul>
 			   	      <li><a class='navLinkOverlay' href="/thisweek.php">This Week</a></li>
-			   	      <li><a class='navLinkOverlay' href="/staff.php">Staff</a></li>
+			   	      <li><a class='navLinkOverlay' href="staff/staff.php">Staff</a></li>
 			   	      <li><a class='navLinkOverlay' href="/pastissues.php">Past Issues</a></li>
 			   	      <li><a class='navLinkOverlay' href="/contact.php">Contact</a></li>
 			   	    </ul>
