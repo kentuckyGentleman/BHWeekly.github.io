@@ -1,0 +1,210 @@
+// CONTENT CONTAINER ----------------------------------
+
+.contactContainer{
+	position: relative;
+	padding: 0 0 60px 0;
+}
+
+// LOGO -----------------------------------------------
+.contact_bhLogo{
+	position: relative;
+	margin: 60px 0 30px 0;
+	text-align: center;
+
+	img{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+// CONTACT INFO ---------------------------------------
+.contactInfo{
+	position: relative;
+	margin-bottom: 60px;
+	text-align: center;
+
+	.button{
+		width: 100%;
+	}
+}
+
+.contactInfoType{
+	border-bottom: 1px solid $gray;
+	padding: 20px 0;
+
+	h2,
+	p{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h2{
+		margin-bottom: 5px;
+	}
+
+	p{
+		line-height: 22px;
+	}
+}
+
+.contactInfoType:first-child{
+	padding-top: 0;
+}
+
+.contactInfoType:nth-child(3){
+	border: none;
+}
+
+// STAFF CONTACT ----------------------------------------
+.staffContact{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.staffContactInfo{
+	border-bottom: 1px solid $gray;
+	padding: 30px 0;
+
+	img{
+		width: 106px;
+		margin-bottom: 15px;
+	}
+}
+
+.staffContactInfo:first-child{
+	padding-top: 0;
+}
+
+.staffContactInfo:nth-child(3){
+	border: none;
+	padding-bottom: 0;
+}
+
+.contactName{
+	h2{
+		margin-bottom: 5px;
+	}
+
+	h3{
+		margin-bottom: 10px;
+	}
+}
+
+// MEDIA QUERIES -----------------------------------------
+@media (min-width: 400px){
+	.contact_bhLogo{
+
+		img{
+			max-width: 349px;
+			margin: 0 auto;
+		}
+	}
+
+}
+
+
+@media (min-width: 500px){
+
+	// Split Staff Picture and Info
+	.staffContactInfo{
+		text-align: left;
+		width: 313px;
+		margin: 0 auto;
+
+		img,
+		.contactName{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		img{
+			margin: 0 20px 0 0;
+		}
+
+		.contactName{
+
+			h2{
+				margin-bottom: 0;
+			}
+
+			h3{
+				margin-bottom: 7px;
+			}
+		}
+	}
+
+	// Center left-justified info
+	.contactInfo{
+		text-align: center;
+
+		// Set 'Email Us' button size
+		.button{
+			width: 304px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	// Set Label to right, and info to the left
+	.contactInfoType{
+		width: 313px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+
+		h2,
+		p{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		h2{
+			font-size: 16px;
+			margin-right: 60px;
+			width: 59px;
+		}
+
+		p{
+			padding-top: 2px;
+		}
+	}
+
+	.staffContactInfo{
+		h2{
+			font-size: 16px;
+		}
+	}
+}
+
+@media (min-width: 890px){
+	// Increase top margin of module
+	.contact_bhLogo{
+		margin-top: 135px;
+		margin-bottom: 80px;
+	}
+	// Contact info and staff contact info side-by-side
+	.contactContainer{
+		text-align: justify;
+		padding-bottom: 135px;
+		max-width: 800;
+		margin: 0 auto;
+	}
+
+	.contactContainer:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	.contactInfo,
+	.staffContact{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.staffContactInfo{
+		border: none;
+		padding-top: 0;
+	}
+}

@@ -10,7 +10,8 @@ aside {
 	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
-	text-align: center;	
+	text-align: center;
+	display: none;
 }
 
 .open {
@@ -32,12 +33,16 @@ nav{
 	// SUBSCRIBE & ADVERTISE ----------------------------
 	.navSubAd{
 		border-bottom: 1px solid $gray;
-		padding-bottom: 10px
+		padding-bottom: 10px;
+
+		.button{
+			display: inline-block;
+		}
 	}
 
 	// LOGO ----------------------------
 	.logoContainer{
-		width: 100%;
+		position: relative;
 		border-bottom: 1px solid $gray;
 		padding: 10px 0;
 	}
@@ -159,14 +164,16 @@ a.close {
 
 	aside{
 		height: initial;
-		position: relative;
+		position: absolute;
 		opacity: 1;
 		visibility: visible;
+		background-color: transparent;
 	}
+
 	nav{
 
 		.navContainer{
-			border-bottom: 1px solid $gray;
+			// border-bottom: 1px solid $gray;
 			text-align: justify;
 			direction: rtl;
 		}
@@ -182,6 +189,7 @@ a.close {
 			width: initial;
 			border: none;
 			padding: 0;
+			direction: initial;
 		}
 
 		.logoContainer{
@@ -232,6 +240,7 @@ a.close {
 			font-size: 14px;
 			font-weight: 400;
 			color: $black;
+			display: initial;
 		}
 	
 	}

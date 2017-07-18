@@ -1,0 +1,233 @@
+// SUBSCRIPTION INFO ---------------------------------------------
+.subscriptionInfo{
+	position: relative;
+	margin: 60px 0;
+	text-align: center;
+}
+
+// Switch order of elements for mobile, lead with image
+.subscriptionInfo, 
+.subscriptionInfoDetails,
+.subscribeImg {
+	transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+}
+
+
+
+.subscriptionInfoDetails{
+	
+	li{
+		border-bottom: 1px solid $gray;
+		padding: 20px 0;
+	}
+
+	li:nth-child(3){
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 15px;
+	}
+
+	p{
+		margin: 0 auto;
+	}
+}
+
+.subscribeImg{
+	width: 100%;
+	margin: 0 auto;
+}
+
+// HOW TO GET YOUR SUBSCRIPTION ---------------------------------------------
+.howToGetSub{
+	
+	border-top: 2px solid $black;
+	margin-bottom: 60px;
+	text-align: center;
+
+	h2{
+		padding: 30px 0;
+	}
+}
+
+.howToGetSubSteps{
+
+	li{
+		padding: 30px;
+		border-bottom: 1px solid $gray;
+	}
+
+	li:first-child{
+		padding-top: 0;
+	}
+
+	li:last-child{
+		padding-bottom: 0;
+		border: none;
+	}
+
+	.stepIcon{
+		margin: 0 auto 15px auto;
+	}
+
+	p{
+		margin: 0 auto;
+
+		span{
+			font-family: $subhead;
+			font-weight: 600;
+		}
+	}
+}
+
+// MEDIA QUERIES ------------------------------------------------------------
+
+// Set img size
+@media (min-width: 500px){
+	.subscribeImg{
+		max-width: 60%;
+	}
+}
+
+// Split Info and Img into Left/right, increase spacing between elements
+@media (min-width: 768px){
+
+	.subscribeImg{
+		max-width: 50%;
+	}
+
+	// Keep Header Size at 42px
+	.sectionHeaderSecondary{
+		h1{
+			font-size: 42px;
+			line-height: 44px;
+		}
+	}
+	
+	.subscriptionInfo{
+		text-align: justify;
+		margin: 186px 0 135px 0;;
+	}
+
+	.subscriptionInfo:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	.subscriptionInfoDetails,
+	.subscribeImg{
+		display: inline-block;
+		text-align: left;
+	}
+
+	.subscriptionInfoDetails{
+		display: inline-block;
+		max-width: 44%;
+		// margin-right: 100px;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	// How to Get Your Subscription 3 columns
+	.howToGetSub{
+		text-align: left;
+		margin-bottom: 135px;
+
+	//Increase header padding
+		h2{
+			padding: 60px 0;
+		}
+	}
+
+	.howToGetSubSteps{
+		text-align: left;
+
+		li{
+			display: inline-block;
+			width: 27%;
+			vertical-align: top;
+			padding: 0 40px 0 0;
+			border: none;
+		}
+
+		li:nth-child(2){
+
+			p{
+				span{
+					font-size: 16px;
+				}
+			}
+		}
+
+		li:last-child{
+			padding-right: 0;
+		}
+
+		.stepIcon{
+			margin: 0 0 15px 0;
+		}
+
+		p{
+			margin: 0;
+		}
+	}
+
+	.howToGetSubSteps:after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+
+// Increase spacing between steps
+@media (min-width: 850px){
+
+	.howToGetSubSteps{
+		text-align: left;
+
+		li{
+			padding-right: 50px;
+		}
+	}
+}
+
+//Increase size of h1
+@media (min-width: 951px){
+
+	.sectionHeaderSecondary{
+		h1{
+			font-size: 56px;
+			line-height: 59px;
+		}
+	}
+
+	.howToGetSubSteps{
+
+		li:nth-child(2){
+
+			p{
+				span{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+//Decrease width of left-column, increase size of image
+@media (min-width: 1000px){
+	
+	.subscriptionInfoDetails{
+		width: 40%;
+	}
+
+	.subscribeImg{
+		max-width: 55%;
+	}
+}
+

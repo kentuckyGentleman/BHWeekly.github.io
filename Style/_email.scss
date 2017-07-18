@@ -1,0 +1,113 @@
+// EMAIL SIGN UP INFO ----------------------------------------------
+.emailInfo{
+	margin: 81px 0 60px 0;
+	text-align: center;
+}
+
+.emailInfoDetails{
+	margin-bottom: 60px;
+
+	li{
+		padding: 20px 0;
+		border-bottom: 1px solid $gray;
+
+		p{
+			margin: 0 auto;
+		}
+	}
+
+	li:last-child{
+		border: none;
+		padding-bottom: 0;
+	}
+}
+
+// SIGN UP FORM -----------------------------------------------------
+.emailSignUp{
+	position: relative;
+	border-top: 2px solid $black;
+	padding: 30px 0 20px 0;
+}
+
+#mc_embed_signup{
+	background: transparent !important;
+}
+
+.mc-field-group{
+
+	// Style fields
+	input,
+	label{
+		font-family: $subhead !important;
+		font-size: 16px;
+	}
+
+	input{
+		padding: 15px !important;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	label{
+		margin-bottom: 8px !important;
+	}
+}
+
+// Style submit button
+.clear{
+	position: relative;
+}
+
+#mc-embedded-subscribe{
+	display: block !important;
+	border-radius: 80px !important;
+	background-color: $blue !important;
+	font-family: $subhead !important;
+	width: 242px !important;
+	margin: 0 auto;
+}
+
+
+// MEDIA QUERIES ------------------------------------------------------
+
+// Add background image to sign up form
+@media (min-width: 425px){
+
+	.emailSignUp{
+		background: url("/Style/emailFormBack.jpg") center bottom no-repeat;
+		background-size: cover;
+		padding: 30px 30px 20px
+	}
+}
+
+// Split email info and sign up form into left, right
+@media (min-width: 768px){
+	.emailInfo{
+		text-align: justify;
+		margin: 156px 0 135px 0;
+	}
+
+	.emailInfo:after{
+		display: inline-block;
+		content: '';
+		width: 100%;
+	}
+
+	.emailInfoDetails,
+	.emailSignUp{
+		display: inline-block;
+		width: 41%;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.emailInfoDetails{
+		margin: 0;
+
+		li{
+			p{
+				margin: 0;
+			}
+		}
+	}
+}

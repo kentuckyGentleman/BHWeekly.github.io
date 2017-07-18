@@ -33,26 +33,32 @@
 
 .sectionHeader {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
   .sectionHeader h1 {
-    margin-bottom: 15px; }
-  .sectionHeader p {
-    margin-bottom: 25px; }
+    margin: 0 auto 15px auto;
+    max-width: 600px; }
+  .sectionHeader h3 {
+    margin: 0 auto 50px auto;
+    max-width: 500px; }
+
+.sectionHeaderSecondary span {
+  color: #0496ff; }
 
 .staffBackground {
-  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background: url("sectionHeader/staffHeaderImg.jpg") center top no-repeat;
   background-size: cover; }
 
 .issuesBackground {
-  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background: url("sectionHeader/issuesHeaderImg.jpg") center top no-repeat;
   background-size: cover; }
 
 .contactBackground {
-  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background: url("sectionHeader/contactHeaderImg.jpg") center top no-repeat;
   background-size: cover; }
 
 .advertiseBackground {
-  background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+  background: url("sectionHeader/advertiseHeaderImg.jpg") center top no-repeat;
   background-size: cover; }
 
 .sectionHeaderLogo {
@@ -89,11 +95,18 @@
   display: block;
   position: absolute;
   top: 8;
-  left: 10; }
+  left: 11; }
+
+.stepIconSpecial {
+  background-color: #0496ff;
+  color: white; }
+
+.thumbNail {
+  width: 100px; }
 
 @media (min-width: 768px) {
   .sectionHeaderInfo h1 {
-    padding: 135px 0 0 0; } }
+    padding: 186px 0 0 0; } }
 @media (min-width: 975px) {
   .sectionHeaderLogo {
     display: none; } }
@@ -115,6 +128,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
   color: #4a4a4a; }
 
 p {
@@ -131,6 +145,10 @@ p {
   font-weight: 400;
   font-size: 12px;
   line-height: 17px; }
+
+.price {
+  font-size: 30px;
+  color: #0496ff; }
 
 .footerText {
   font-size: 16px;
@@ -150,7 +168,12 @@ a {
   font-size: 16px;
   color: #0496ff;
   text-decoration: none;
-  display: block; }
+  display: block;
+  -webkit-transition: all .50s ease-in-out;
+  transition: all .50s ease-in-out; }
+
+a:hover {
+  color: #4a4a4a; }
 
 .button {
   border-radius: 80px;
@@ -161,9 +184,9 @@ a {
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: none;
-  display: inline-block; }
-  .button a {
-    font-size: 13px; }
+  display: inline-block;
+  -webkit-transition: all .50s ease-in-out;
+  transition: all .50s ease-in-out; }
 
 .buttonMain {
   background-color: #0496ff;
@@ -171,8 +194,8 @@ a {
   border: none; }
 
 .buttonSecondary {
-  background-color: transparent !important;
-  color: #0496ff !important;
+  background-color: transparent;
+  color: #0496ff;
   border: 2px solid #0496ff;
   padding-top: 6px;
   padding-bottom: 6px; }
@@ -191,6 +214,17 @@ a {
 .buttonLarge {
   max-width: 250px; }
 
+.buttonMain:hover,
+.buttonStaffInd:hover {
+  background-color: #4a4a4a;
+  color: white; }
+
+.buttonSecondary:hover,
+.buttonTertiary:hover {
+  background-color: #4a4a4a;
+  color: white;
+  border: 2px solid #4a4a4a; }
+
 aside {
   position: fixed;
   width: 100%;
@@ -202,7 +236,8 @@ aside {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .open {
   opacity: 1;
@@ -216,8 +251,10 @@ nav {
   nav .navSubAd {
     border-bottom: 1px solid #b3b3b3;
     padding-bottom: 10px; }
+    nav .navSubAd .button {
+      display: inline-block; }
   nav .logoContainer {
-    width: 100%;
+    position: relative;
     border-bottom: 1px solid #b3b3b3;
     padding: 10px 0; }
   nav .bhWeekly_logo_nav {
@@ -285,12 +322,12 @@ a.close span:after {
 @media (min-width: 975px) {
   aside {
     height: initial;
-    position: relative;
+    position: absolute;
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    background-color: transparent; }
 
   nav .navContainer {
-    border-bottom: 1px solid #b3b3b3;
     text-align: justify;
     direction: rtl; }
   nav .navContainer:after {
@@ -301,7 +338,8 @@ a.close span:after {
     display: inline-block;
     width: initial;
     border: none;
-    padding: 0; }
+    padding: 0;
+    direction: initial; }
   nav .logoContainer {
     height: initial;
     width: initial;
@@ -331,7 +369,8 @@ a.close span:after {
   nav .navLinkOverlay {
     font-size: 14px;
     font-weight: 400;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+    display: initial; }
 
   button.toggle-overlay {
     display: none; } }
@@ -374,7 +413,7 @@ footer {
 
 .footerButtons {
   float: left;
-  margin-left: 40px; }
+  margin-left: 35px; }
   .footerButtons .button {
     display: block;
     margin-bottom: 8px; }
@@ -644,6 +683,8 @@ footer {
   display: inline-block;
   vertical-align: top;
   width: 100%; }
+  .advStep .stepIcon {
+    margin: 0 auto; }
 
 .vrLight {
   width: 0; }
@@ -653,12 +694,11 @@ footer {
   padding: 30px 0;
   text-align: center;
   max-width: 300px; }
+  .advStepInfo .button {
+    margin: 25px 0; }
 
 .finePrint {
   margin: 0 auto; }
-
-.button {
-  margin: 25px 0; }
 
 @media (min-width: 700px) {
   .advStepInfo {
@@ -667,24 +707,499 @@ footer {
   .advContainer {
     text-align: justify;
     padding: 135px 0; }
+    .advContainer .hrLight {
+      display: inline-block;
+      width: 1px;
+      height: 400px;
+      vertical-align: top; }
 
   .advHeader {
     text-align: center;
     margin-bottom: 80px; }
 
-  .advStep,
-  .hrLight {
-    vertical-align: top; }
-
   .advStep {
     width: 47%;
     margin-top: 0;
-    border: none; }
-
-  .hrLight {
-    display: inline-block;
-    width: 1px;
-    height: 400px; }
+    border: none;
+    vertical-align: top; }
+    .advStep .stepIcon {
+      margin: 0; }
 
   .advStepInfo {
     padding: 80px 20px; } }
+.contactContainer {
+  position: relative;
+  padding: 0 0 60px 0; }
+
+.contact_bhLogo {
+  position: relative;
+  margin: 60px 0 30px 0;
+  text-align: center; }
+  .contact_bhLogo img {
+    max-width: 100%;
+    margin: 0 auto; }
+
+.contactInfo {
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center; }
+  .contactInfo .button {
+    width: 100%; }
+
+.contactInfoType {
+  border-bottom: 1px solid #b3b3b3;
+  padding: 20px 0; }
+  .contactInfoType h2,
+  .contactInfoType p {
+    margin-left: auto;
+    margin-right: auto; }
+  .contactInfoType h2 {
+    margin-bottom: 5px; }
+  .contactInfoType p {
+    line-height: 22px; }
+
+.contactInfoType:first-child {
+  padding-top: 0; }
+
+.contactInfoType:nth-child(3) {
+  border: none; }
+
+.staffContact {
+  position: relative;
+  margin: 0 auto;
+  text-align: center; }
+
+.staffContactInfo {
+  border-bottom: 1px solid #b3b3b3;
+  padding: 30px 0; }
+  .staffContactInfo img {
+    width: 106px;
+    margin-bottom: 15px; }
+
+.staffContactInfo:first-child {
+  padding-top: 0; }
+
+.staffContactInfo:nth-child(3) {
+  border: none;
+  padding-bottom: 0; }
+
+.contactName h2 {
+  margin-bottom: 5px; }
+.contactName h3 {
+  margin-bottom: 10px; }
+
+@media (min-width: 400px) {
+  .contact_bhLogo img {
+    max-width: 349px;
+    margin: 0 auto; } }
+@media (min-width: 500px) {
+  .staffContactInfo {
+    text-align: left;
+    width: 313px;
+    margin: 0 auto; }
+    .staffContactInfo img,
+    .staffContactInfo .contactName {
+      display: inline-block;
+      vertical-align: top; }
+    .staffContactInfo img {
+      margin: 0 20px 0 0; }
+    .staffContactInfo .contactName h2 {
+      margin-bottom: 0; }
+    .staffContactInfo .contactName h3 {
+      margin-bottom: 7px; }
+
+  .contactInfo {
+    text-align: center; }
+    .contactInfo .button {
+      width: 304px;
+      margin-left: auto;
+      margin-right: auto; }
+
+  .contactInfoType {
+    width: 313px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
+    .contactInfoType h2,
+    .contactInfoType p {
+      display: inline-block;
+      vertical-align: top; }
+    .contactInfoType h2 {
+      font-size: 16px;
+      margin-right: 60px;
+      width: 59px; }
+    .contactInfoType p {
+      padding-top: 2px; }
+
+  .staffContactInfo h2 {
+    font-size: 16px; } }
+@media (min-width: 890px) {
+  .contact_bhLogo {
+    margin-top: 135px;
+    margin-bottom: 80px; }
+
+  .contactContainer {
+    text-align: justify;
+    padding-bottom: 135px;
+    max-width: 800;
+    margin: 0 auto; }
+
+  .contactContainer:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+  .contactInfo,
+  .staffContact {
+    display: inline-block;
+    vertical-align: top; }
+
+  .staffContactInfo {
+    border: none;
+    padding-top: 0; } }
+.subscriptionInfo {
+  position: relative;
+  margin: 60px 0;
+  text-align: center; }
+
+.subscriptionInfo,
+.subscriptionInfoDetails,
+.subscribeImg {
+  transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1); }
+
+.subscriptionInfoDetails li {
+  border-bottom: 1px solid #b3b3b3;
+  padding: 20px 0; }
+.subscriptionInfoDetails li:nth-child(3) {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 15px; }
+.subscriptionInfoDetails p {
+  margin: 0 auto; }
+
+.subscribeImg {
+  width: 100%;
+  margin: 0 auto; }
+
+.howToGetSub {
+  border-top: 2px solid #4a4a4a;
+  margin-bottom: 60px;
+  text-align: center; }
+  .howToGetSub h2 {
+    padding: 30px 0; }
+
+.howToGetSubSteps li {
+  padding: 30px;
+  border-bottom: 1px solid #b3b3b3; }
+.howToGetSubSteps li:first-child {
+  padding-top: 0; }
+.howToGetSubSteps li:last-child {
+  padding-bottom: 0;
+  border: none; }
+.howToGetSubSteps .stepIcon {
+  margin: 0 auto 15px auto; }
+.howToGetSubSteps p {
+  margin: 0 auto; }
+  .howToGetSubSteps p span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600; }
+
+@media (min-width: 500px) {
+  .subscribeImg {
+    max-width: 60%; } }
+@media (min-width: 768px) {
+  .subscribeImg {
+    max-width: 50%; }
+
+  .sectionHeaderSecondary h1 {
+    font-size: 42px;
+    line-height: 44px; }
+
+  .subscriptionInfo {
+    text-align: justify;
+    margin: 186px 0 135px 0; }
+
+  .subscriptionInfo:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+  .subscriptionInfoDetails,
+  .subscribeImg {
+    display: inline-block;
+    text-align: left; }
+
+  .subscriptionInfoDetails {
+    display: inline-block;
+    max-width: 44%; }
+    .subscriptionInfoDetails p {
+      margin: 0; }
+
+  .howToGetSub {
+    text-align: left;
+    margin-bottom: 135px; }
+    .howToGetSub h2 {
+      padding: 60px 0; }
+
+  .howToGetSubSteps {
+    text-align: left; }
+    .howToGetSubSteps li {
+      display: inline-block;
+      width: 27%;
+      vertical-align: top;
+      padding: 0 40px 0 0;
+      border: none; }
+    .howToGetSubSteps li:nth-child(2) p span {
+      font-size: 16px; }
+    .howToGetSubSteps li:last-child {
+      padding-right: 0; }
+    .howToGetSubSteps .stepIcon {
+      margin: 0 0 15px 0; }
+    .howToGetSubSteps p {
+      margin: 0; }
+
+  .howToGetSubSteps:after {
+    content: '';
+    display: inline-block;
+    width: 100%; } }
+@media (min-width: 850px) {
+  .howToGetSubSteps {
+    text-align: left; }
+    .howToGetSubSteps li {
+      padding-right: 50px; } }
+@media (min-width: 951px) {
+  .sectionHeaderSecondary h1 {
+    font-size: 56px;
+    line-height: 59px; }
+
+  .howToGetSubSteps li:nth-child(2) p span {
+    font-size: 18px; } }
+@media (min-width: 1000px) {
+  .subscriptionInfoDetails {
+    width: 40%; }
+
+  .subscribeImg {
+    max-width: 55%; } }
+.emailInfo {
+  margin: 81px 0 60px 0;
+  text-align: center; }
+
+.emailInfoDetails {
+  margin-bottom: 60px; }
+  .emailInfoDetails li {
+    padding: 20px 0;
+    border-bottom: 1px solid #b3b3b3; }
+    .emailInfoDetails li p {
+      margin: 0 auto; }
+  .emailInfoDetails li:last-child {
+    border: none;
+    padding-bottom: 0; }
+
+.emailSignUp {
+  position: relative;
+  border-top: 2px solid #4a4a4a;
+  padding: 30px 0 20px 0; }
+
+#mc_embed_signup {
+  background: transparent !important; }
+
+.mc-field-group input,
+.mc-field-group label {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px; }
+.mc-field-group input {
+  padding: 15px !important;
+  margin-bottom: 10px;
+  font-size: 16px; }
+.mc-field-group label {
+  margin-bottom: 8px !important; }
+
+.clear {
+  position: relative; }
+
+#mc-embedded-subscribe {
+  display: block !important;
+  border-radius: 80px !important;
+  background-color: #0496ff !important;
+  font-family: "Roboto", sans-serif !important;
+  width: 242px !important;
+  margin: 0 auto; }
+
+@media (min-width: 425px) {
+  .emailSignUp {
+    background: url("/Style/emailFormBack.jpg") center bottom no-repeat;
+    background-size: cover;
+    padding: 30px 30px 20px; } }
+@media (min-width: 768px) {
+  .emailInfo {
+    text-align: justify;
+    margin: 156px 0 135px 0; }
+
+  .emailInfo:after {
+    display: inline-block;
+    content: '';
+    width: 100%; }
+
+  .emailInfoDetails,
+  .emailSignUp {
+    display: inline-block;
+    width: 41%;
+    text-align: left;
+    vertical-align: top; }
+
+  .emailInfoDetails {
+    margin: 0; }
+    .emailInfoDetails li p {
+      margin: 0; } }
+.homeNavContainer {
+  max-width: 960px;
+  margin: 0 auto 60px auto;
+  padding: 10px 10px 0 10px;
+  text-align: center; }
+  .homeNavContainer .navSubAd {
+    padding-bottom: 10px; }
+  .homeNavContainer .homeServingButtons {
+    border-bottom: 1px solid #b3b3b3; }
+  .homeNavContainer .logoServingContainer {
+    position: relative;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0; }
+  .homeNavContainer .logoContainer {
+    width: 100%;
+    border-bottom: 1px solid #b3b3b3;
+    padding: 10px 0; }
+    .homeNavContainer .logoContainer img {
+      max-width: 450px;
+      margin: 0 auto; }
+  .homeNavContainer .bhWeekly_logo_nav {
+    width: 100%; }
+  .homeNavContainer .navItems {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0; }
+
+.homeContainer {
+  position: relative;
+  margin: 0 0 60px 0; }
+
+.homeHeader {
+  margin: 0 0 30px 0;
+  text-align: center; }
+  .homeHeader h1 {
+    margin-bottom: 5px; }
+    .homeHeader h1 span {
+      color: #0496ff; }
+
+.recentIssue {
+  position: relative;
+  margin: 0 auto;
+  -webkit-box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  background-color: #0496ff; }
+  .recentIssue img {
+    width: 100%;
+    border: 1px solid #b3b3b3; }
+  .recentIssue .buttonHome {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7); }
+
+@media (min-width: 600px) {
+  .recentIssue {
+    width: 60%; } }
+@media (min-width: 768px) {
+  .homeNavContainer {
+    margin: 0 auto 100px auto;
+    padding: 10px 20px 0 20px; }
+    .homeNavContainer .logoContainer {
+      padding: 20px 0;
+      border-bottom: 2px solid #4a4a4a; }
+    .homeNavContainer .homeServingbuttons {
+      text-align: justify;
+      direction: rtl; }
+    .homeNavContainer .homeServingbuttons:after {
+      display: inline-block;
+      content: '';
+      width: 100%; }
+    .homeNavContainer .logoServingContainer {
+      width: 254px;
+      height: initial;
+      visibility: visible;
+      opacity: 1; }
+      .homeNavContainer .logoServingContainer img {
+        width: 100%; }
+    .homeNavContainer .navSubAd,
+    .homeNavContainer .logoServingContainer {
+      display: inline-block; }
+    .homeNavContainer .navItems {
+      visibility: visible;
+      opacity: 1;
+      width: initial;
+      height: initial;
+      padding: 12px 0;
+      border-bottom: 1px solid #b3b3b3; }
+      .homeNavContainer .navItems li {
+        display: inline-block;
+        margin-right: 30px; }
+      .homeNavContainer .navItems li:last-child {
+        margin-right: 0; }
+      .homeNavContainer .navItems a {
+        font-size: 15px; }
+
+  .homeContainer {
+    text-align: justify;
+    margin-bottom: 110px; }
+
+  .homeContainer:after {
+    display: inline-block;
+    content: '';
+    width: 100%; }
+
+  .homeHeader,
+  .recentIssue {
+    display: inline-block;
+    vertical-align: middle; }
+
+  .homeHeader {
+    width: 41%;
+    text-align: left; }
+
+  .recentIssue {
+    max-width: 50%; }
+    .recentIssue .button {
+      width: 50%;
+      padding: 30px 0; }
+    .recentIssue .buttonHome,
+    .recentIssue img {
+      transition: all .5s ease; }
+
+  .recentIssue:hover img {
+    opacity: 0.25; }
+  .recentIssue:hover .buttonHome {
+    background-color: white;
+    color: #0496ff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0); } }
+@media (min-width: 975px) {
+  .asideContain {
+    display: none; }
+
+  .homeNavContainer {
+    padding: 10px 0 0 0; } }

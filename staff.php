@@ -8,10 +8,10 @@
 			<div class="sectionHeaderLogo">
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
-			<h1>Meet the Staff<br><span class="sectionHeaderBlue">of Beverly Hills Weekly</span></h1>
-			<p>
-				Our team is dedicated to making sure you're up-to-date with what's happening in your neighborhood
-			</p>
+			<h1>Meet the Staff of<br><span class="sectionHeaderBlue">Beverly Hills Weekly</span></h1>
+			<h3>
+				Our team is dedicated to making sure you're up-to-date with what's happening in your neighborhood.
+			</h3>
 			<div class="hrHeavy"></div>
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 			<p>
 				At the forefront of Beverly Hills media and politics for close to 20 years, Publisher & CEO Josh Gross launched Beverly Hills Weekly in 1999…
 			</p>
-			<div class="button buttonSecondary"><a href="/joshgross.php">Meet Josh</a></div>
+			<a class="button buttonSecondary" href="joshgross.php">Meet Josh</a>
 		</div>
 		<div class="staffInd">
 			<img class="staffPortrait" src="img/staff/herbertPortrait.png">
@@ -38,7 +38,7 @@
 			<p>
 				Hailing from the Pacific Northwest, Olivia graduated from Lake Oswego High School and Seattle University with a B.A. degree in Journalism…
 			</p>
-			<div class="button buttonSecondary"><a href="/stevenherbert.php">Meet Steven</a></div>
+			<a class="button buttonSecondary" href="stevenherbert.php">Meet Steven</a>
 		</div>
 		<div class="staffInd">
 			<img class="staffPortrait" src="img/staff/andersonPortrait.png">
@@ -48,7 +48,7 @@
 			<p>
 				Hailing from the Pacific Northwest, Olivia graduated from Lake Oswego High School and Seattle University with a B.A. degree in Journalism…
 			</p>
-			<div class="button buttonSecondary"><a href="/olivaAnderson.php">Meet Olivia</a></div>
+			<a class="button buttonSecondary" href="oliviaanderson.php">Meet Olivia</a>
 		</div>
 	</div>
 </div>

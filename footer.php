@@ -6,19 +6,19 @@
 			<p class="footerText">
 				Sign up for Beverly Hills Weekly Email to be notified when the latest issue is hot off the presses.
 			</p>
-			<div class="button buttonSecondary"><a href="/email.php">Sign Up</a></div>
+			<a class="button buttonSecondary" href="email.php">Sign Up</a>
 		</div>
 		<div class="footerNavContactAd">
 			<div class="footerNav">
 				<ul class="footerList">
-					<li><a href="/index.php">This Week</a></li>
-					<li><a href="/pastissues.php">Past Issues</a></li>
-					<li><a href="/staff.php">Staff</a></li>
-					<li><a href="/contact.php">Contact</a></li>
+					<li><a href="index.php">This Week</a></li>
+					<li><a href="">Past Issues</a></li>
+					<li><a href="staff.php">Staff</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 				<div class="footerbuttons">
-					<div class="button buttonSecondary"><a href="/subscribe.php">Subscribe</a></div>
-					<div class="button buttonMain"><a href="/advertise.php">Advertise with us</a></div>
+					<a class="button buttonSecondary" href="subscribe.php">Subscribe</a>
+					<a class="button buttonMain" href="advertise.php">Advertise with us</a>
 				</div>
 			</div>
 			<div class="footerContact">
@@ -30,7 +30,7 @@
 				<hr>
 				<p class="footerText"><span>Phone: </span>(310) 887-0788</p>
 				<hr>
-				<p class="footerText"><span>Fax: </span>(310) 887-0788</p>
+				<p class="footerText"><span>Fax: </span>(310) 887-0789</p>
 			</div>
 			<div class="footerAdjudicated">
 				<p class="footerTextSecondary">

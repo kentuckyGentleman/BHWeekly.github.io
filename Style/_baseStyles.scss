@@ -46,35 +46,45 @@
 .sectionHeader{
 	position: relative;
 	overflow: hidden;
+	text-align: center;
 
 	h1{
-		margin-bottom: 15px;
+		margin: 0 auto 15px auto;
+		max-width: 600px;
 	}
 
-	p{
-		margin-bottom: 25px;
+	h3{
+		margin: 0 auto 50px auto;
+		max-width: 500px;
+	}
+}
+
+// SECTION HEADER SECONDARY --------------------------------------
+.sectionHeaderSecondary{
+	span{
+		color: $blue;
 	}
 }
 
 
 // SECTION HEADER BACKGROUND IMAGES ------------------------------
 .staffBackground{
-	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background: url("sectionHeader/staffHeaderImg.jpg") center top no-repeat;
 	background-size: cover;
 }
 
 .issuesBackground{
-	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background: url("sectionHeader/issuesHeaderImg.jpg") center top no-repeat;
 	background-size: cover;
 }
 
 .contactBackground{
-	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background: url("sectionHeader/contactHeaderImg.jpg") center top no-repeat;
 	background-size: cover;
 }
 
 .advertiseBackground{
-	background: url("/Style/sectionHeader/staffHeaderImg.jpg") center top no-repeat;
+	background: url("sectionHeader/advertiseHeaderImg.jpg") center top no-repeat;
 	background-size: cover;
 }
 
@@ -126,7 +136,17 @@
 	display: block;
 	position: absolute;
 	top: 8;
-	left: 10;
+	left: 11;
+}
+
+.stepIconSpecial{
+	background-color: $blue;
+	color: white;
+}
+
+// THUMBNAILS (PAST ISSUES) ----------------------------------
+.thumbNail{
+	width: 100px;
 }
 
 
@@ -136,7 +156,7 @@
 	.sectionHeaderInfo{
 
 		h1{
-			padding: 135px 0 0 0;
+			padding: 186px 0 0 0;
 		}
 	}
 

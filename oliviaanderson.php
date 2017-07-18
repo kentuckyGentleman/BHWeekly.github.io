@@ -9,9 +9,9 @@
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
 			<h1>Meet the Staff<br><span class="sectionHeaderBlue">of Beverly Hills Weekly</span></h1>
-			<p>
+			<h3>
 				Our team is dedicated to making sure you're up-to-date with what's happening in your neighborhood
-			</p>
+			</h3>
 			<div class="hrHeavy"></div>
 		</div>
 	</div>
@@ -24,9 +24,7 @@
 			<h1>Olivia Anderson</h1>
 			<h3>Reporter</h3>
 			<div class="hrLight"></div>
-			<div class="button buttonStaffInd">
-				<a href="mailto:olivia@bhweekly.com">Contact Olivia</a>
-			</div>
+			<a class="button buttonStaffInd" href="mailto:olivia@bhweekly.com">Contact Olivia</a>
 		</div>
 	
 		<div class="staffBio">
@@ -39,7 +37,7 @@
 	</div>
 </div>
 
-<a href="/joshgross.php" class="meetNext">
+<a href="joshgross.php" class="meetNext">
 	<div class="container">
 		<h2>Next, meet</h2>
 			<div class="meetNextPerson">
