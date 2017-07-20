@@ -41,9 +41,9 @@
 	<div class="container">
 		<h2>Next, meet</h2>
 			<div class="meetNextPerson">
-				<img class="staffPortrait" src="img/staff/grossPortrait.png">
-				<h1>Josh Gross</h1>
-				<h3>CEO & Publisher</h3>
+				<img class="staffPortrait" src="img/staff/herbertPortrait_bw.png">
+				<h1>Steven Herbert</h1>
+				<h3>Sports Editor</h3>
 			</div>
 	</div>
 </a>

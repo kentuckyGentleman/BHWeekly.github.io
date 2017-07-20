@@ -19,9 +19,9 @@
 
 <div class="container">
 	<div class="staffMembers">
-		<h2 class="staffHeader">Your Neighborhood Team</h2>
+		<!-- <h2 class="staffHeader">Your Neighborhood Team</h2> -->
 		<div class="staffInd">
-			<img class="staffPortrait" src="img/staff/grossPortrait.png">
+			<img class="staffPortrait" src="img/staff/grossPortrait_bw.png">
 			<h2>CEO & Publisher</h2>
 			<h3>Josh Gross</h3>
 			<div class="hrHeavy"></div>
@@ -31,17 +31,7 @@
 			<a class="button buttonSecondary" href="joshgross.php">Meet Josh</a>
 		</div>
 		<div class="staffInd">
-			<img class="staffPortrait" src="img/staff/herbertPortrait.png">
-			<h2>Sports Editor</h2>
-			<h3>Steven Herbert</h3>
-			<div class="hrHeavy"></div>
-			<p>
-				Hailing from the Pacific Northwest, Olivia graduated from Lake Oswego High School and Seattle University with a B.A. degree in Journalism…
-			</p>
-			<a class="button buttonSecondary" href="stevenherbert.php">Meet Steven</a>
-		</div>
-		<div class="staffInd">
-			<img class="staffPortrait" src="img/staff/andersonPortrait.png">
+			<img class="staffPortrait" src="img/staff/andersonPortrait_bw.png">
 			<h2>Reporter</h2>
 			<h3>Olivia Anderson</h3>
 			<div class="hrHeavy"></div>
@@ -49,6 +39,16 @@
 				Hailing from the Pacific Northwest, Olivia graduated from Lake Oswego High School and Seattle University with a B.A. degree in Journalism…
 			</p>
 			<a class="button buttonSecondary" href="oliviaanderson.php">Meet Olivia</a>
+		</div>
+		<div class="staffInd">
+			<img class="staffPortrait" src="img/staff/herbertPortrait_bw.png">
+			<h2>Sports Editor</h2>
+			<h3>Steven Herbert</h3>
+			<div class="hrHeavy"></div>
+			<p>
+				Steven Herbert has covered Beverly Hills High School sports for the Beverly Hills Weekly since shortly after it began publishing in 1999…
+			</p>
+			<a class="button buttonSecondary" href="stevenherbert.php">Meet Steven</a>
 		</div>
 	</div>
 </div>

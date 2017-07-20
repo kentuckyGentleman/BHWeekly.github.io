@@ -40,9 +40,9 @@
 	<div class="container">
 		<h2>Next, meet</h2>
 			<div class="meetNextPerson">
-				<img class="staffPortrait" src="img/staff/andersonPortrait.png">
-				<h1>Olivia Anderson</h1>
-				<h3>Reporter</h3>
+				<img class="staffPortrait" src="img/staff/grossPortrait_bw.png">
+				<h1>Josh Gross</h1>
+				<h3>CE0 &amp; Publisher</h3>
 			</div>
 	</div>
 </a>

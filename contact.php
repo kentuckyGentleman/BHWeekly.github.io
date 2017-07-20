@@ -8,10 +8,10 @@
 			<div class="sectionHeaderLogo">
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
-			<h1>Contact us,<br><span class="sectionHeaderBlue">tips and feedback</span></h1>
-			<h3>
+			<h1 class="contactHeadline">Contact us,<br><span class="sectionHeaderBlue">tips and feedback</span></h1>
+			<!-- <h3>
 				Tell us what’s on your mind and what’s going on in your neighborhood.
-			</h3>
+			</h3> -->
 			<div class="hrHeavy"></div>
 		</div>
 	</div>
@@ -45,13 +45,13 @@
 					(310) 887-0789
 				</p>
 			</div>
-			<a class="button buttonSecondary" href="mailto:editor@bhweekly.com">Email us</a>
+			<a class="button buttonSecondary" href="mailto:josh@bhweekly.com">Email us</a>
 		</div>
 
 		<!-- Staff contacts -->
 		<div class="staffContact">
 			<div class="staffContactInfo">
-				<img src="img/staff/grossPortrait.png">
+				<img src="img/staff/grossPortrait_bw.png">
 				<div class="contactName">
 					<h2>Josh Gross</h2>
 					<h3>CEO &amp; Publisher</h3>
@@ -59,7 +59,7 @@
 				</div>
 			</div>
 			<div class="staffContactInfo">
-				<img src="img/staff/herbertPortrait.png">
+				<img src="img/staff/herbertPortrait_bw.png">
 				<div class="contactName">
 					<h2>Steven Herbert</h2>
 					<h3>Sports Editor</h3>
@@ -67,7 +67,7 @@
 				</div>
 			</div>
 			<div class="staffContactInfo">
-				<img src="img/staff/andersonPortrait.png">
+				<img src="img/staff/andersonPortrait_bw.png">
 				<div class="contactName">
 					<h2>Olivia Anderson</h2>
 					<h3>Reporter</h3>

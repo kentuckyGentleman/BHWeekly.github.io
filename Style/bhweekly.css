@@ -38,6 +38,8 @@
   .sectionHeader h1 {
     margin: 0 auto 15px auto;
     max-width: 600px; }
+  .sectionHeader .contactHeadline {
+    margin-bottom: 50px !important; }
   .sectionHeader h3 {
     margin: 0 auto 50px auto;
     max-width: 500px; }
@@ -561,7 +563,8 @@ footer {
     width: 261px;
     text-align: left;
     display: inline-block;
-    border: none; }
+    border: none;
+    padding: 0; }
     .staffInd .hrHeavy {
       margin: 0 0 25px 0; } }
 .indStaffContainer {
@@ -1112,8 +1115,7 @@ footer {
     margin: 0 auto;
     padding: 20px 0;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 17%;
     left: 0;
     right: 0;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);

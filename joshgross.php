@@ -47,9 +47,9 @@
 	<div class="container">
 		<h2>Next, meet</h2>
 			<div class="meetNextPerson">
-				<img class="staffPortrait" src="img/staff/herbertPortrait.png">
-				<h1>Steven Herbert</h1>
-				<h3>Sports Editor</h3>
+				<img class="staffPortrait" src="img/staff/andersonPortrait_bw.png">
+				<h1>Olivia Anderson</h1>
+				<h3>Reporter</h3>
 			</div>
 	</div>
 </a>
