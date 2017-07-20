@@ -177,6 +177,9 @@ a {
 a:hover {
   color: #4a4a4a; }
 
+.pastIssuesLink {
+  display: inline-block; }
+
 .button {
   border-radius: 80px;
   font-family: "Roboto", sans-serif;

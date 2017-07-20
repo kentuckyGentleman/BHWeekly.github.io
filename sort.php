@@ -9,34 +9,42 @@ function issuePreview($dir){
 }
 
 // Sort through and display all previous issues
-// function pastIssues($pastDir){
+function pastIssues($pastDir){
 
-// 	$pastIssues = array();
-// 	$pastIssues = scandir($pastDir);
+	// Scan pdf folder
+	$pastIssues = array();
+	$pastIssues = scandir($pastDir);
 
-// 	foreach ($pastIssues as $issue){
-// 		// echo '<a href="'.$pastDir."/".$issue'" target="_blank">'$issue'</a>';
-// 		echo '<a href="';
-// 		echo $pastDir."/".$issue;
-// 		echo '"target="blank">';
-// 		echo $issue;
-// 		echo '</a>';
-// 	}
-// }
+	// Set files to be ignored during scan
+	$ignored = array('.', '..', '.DS_Store');
 
-function pastIssues($pastFile,$pastImg){
-
-	$pastPDFS = scandir($pastFile);
-	$pastPreviews = scandir($pastImg);
-
-	foreach ($pastPDFS as $pastPDF){
-		echo '<a href="';
-		echo $pastFile."/".$pastPDF;
+	// Turn each filename into a link
+	foreach ($pastIssues as $issue){
+		
+		if (in_array($issue, $ignored)) continue;
+		//Remove '.pdf' from filenames
+		$removeExt = str_replace(".pdf","", $issue);
+		echo '<a class="pastIssuesLink" href="';
+		echo $pastDir."/".$issue;
 		echo '"target="blank">';
-		echo '<img class="thumbnail" src="';
-		echo $pastImg."/".$pastPreview;
-		echo '"/>';
+		echo $removeExt;
 		echo '</a>';
 	}
 }
+
+// function pastIssues($pastFile,$pastImg){
+
+// 	$pastPDFS = scandir($pastFile);
+// 	$pastPreviews = scandir($pastImg);
+
+// 	foreach ($pastPDFS as $pastPDF){
+// 		echo '<a href="';
+// 		echo $pastFile."/".$pastPDF;
+// 		echo '"target="blank">';
+// 		echo '<img class="thumbnail" src="';
+// 		echo $pastImg."/".$pastPreview;
+// 		echo '"/>';
+// 		echo '</a>';
+// 	}
+// }
 ?>
