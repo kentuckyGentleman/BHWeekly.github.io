@@ -13,7 +13,7 @@ function pastIssues($pastDir){
 
 	// Scan pdf folder
 	$pastIssues = array();
-	$pastIssues = scandir($pastDir);
+	$pastIssues = scandir($pastDir, $sorting_order = SCANDIR_SORT_DESCENDING);
 
 	// Set files to be ignored during scan
 	$ignored = array('.', '..', '.DS_Store','.DS_');
@@ -28,8 +28,6 @@ function pastIssues($pastDir){
 
 		// Remove Duplicate years from array
 		$issueHeaders = array_unique($issueHeader);
-		// Reverse years so that 2017 is most recent;
-		$issueHeaders = array_reverse($issueHeaders);
 	}
 
 	// Display Year Headers and respective issues
