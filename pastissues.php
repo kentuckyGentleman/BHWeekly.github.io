@@ -21,5 +21,5 @@ Relive important moments or get your dose of nostalgia.
 </div>
 
 <div class="container">
-	<?php echo pastIssues("issues/pdf","issues/preview"); ?>
+	<?php echo pastIssues("issues/pdf"); ?>
 </div>
