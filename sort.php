@@ -18,27 +18,32 @@ function pastIssues($pastDir){
 	// Set files to be ignored during scan
 	$ignored = array('.', '..', '.DS_Store','.DS_');
 
-	$issueLinks = array();
 	$issueHeader = array();
 
 	// Generate File names and Headers
 	foreach ($pastIssues as $issue){
 
-		$issueLinks[] = $issue;
+		$pastIssues = array_reverse($pastIssues);
 		$issueHeader[] = substr($issue, 0, 4);
 
 		// Remove Duplicate years from array
 		$issueHeaders = array_unique($issueHeader);
+		// Reverse years so that 2017 is most recent;
+		$issueHeaders = array_reverse($issueHeaders);
 	}
 
 	// Display Year Headers and respective issues
 	foreach ($issueHeaders as $issueHead){
 
 			if (in_array($issueHead, $ignored)) continue;
-			echo '<div class="pastIssues">';
-			echo '<h1>';
+			echo '<div class="pastIssues '.$issueHead.'" id="">';
+			echo '<h1 class="issuesHeader">';
 			echo $issueHead;
 			echo '</h1>';
+			echo '<h3 class="issuesSubHeader">';
+			echo 'Issue No.';
+			echo '</h3>';
+			echo '<div class="pastIssuesLinks">';
 			
 			foreach ($pastIssues as $issue){
 				if ((substr($issue, 0, 4)) == $issueHead ){
@@ -59,6 +64,8 @@ function pastIssues($pastDir){
 				}
 
 			}
+			echo '</div>';
+			echo '<a class="backToTop button buttonTertiary" href="">Back to Top</a>';
 			echo '</div>';
 	}
 }

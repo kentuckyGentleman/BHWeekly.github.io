@@ -1,0 +1,88 @@
+.pastIssuesContainer{
+	margin: 60px 0;
+	position: relative;
+}
+
+.pastIssues{
+	margin-bottom: 30px;
+}
+
+.issuesHeader{
+	font-size: 30px;
+	border-bottom: 1px solid $black;
+	margin-bottom: 5px;
+}
+
+.issuesSubHeader{
+	font-family: $headline;
+	color: $gray;
+}
+
+// Issue links
+.pastIssuesLinks{
+	margin-bottom: 20px;
+}
+
+.pastIssuesLink{
+	display: inline-block;
+	width: 37%;
+	font-size: 18px;
+	border-bottom: 1px solid $gray;
+	padding: 25px 0 7px 0;
+	margin-right: 30px;
+}
+
+// Back to Top link
+.backToTop{
+	border: 1px solid $gray;
+	color: $gray;
+}
+
+
+// Media Queries
+@media (min-width: 768px){
+
+	.pastIssuesContainer{
+		text-align: justify;
+		margin: 135px 0;
+	}
+
+	.pastIssuesContainer:after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	.pastIssues{
+		width: 40%;
+		vertical-align: top;
+		display: inline-block;
+		margin-bottom: 60px;
+		margin-right: 50px;
+	}
+
+	#2017
+
+	.pastIssuesLink:nth-child(even){
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 900px){
+
+	.pastIssues:nth-child(odd){
+		margin-right: 80px;
+	}
+
+	.pastIssueLink{
+		-webkit-transition: all .50s ease-in-out;
+		-moz-transition: all .50s ease-in-out;
+		transition: all .50s ease-in-out;
+	}
+
+	.pastIssueLink:hover{
+		background-color: $blue !important;
+		color: white;
+		border-bottom: 1px solid $blue;
+	}
+}

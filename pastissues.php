@@ -21,5 +21,12 @@ Relive important moments or get your dose of nostalgia.
 </div>
 
 <div class="container">
-	<?php echo pastIssues("issues/pdf"); ?>
+	<div class="pastIssuesContainer">
+		<?php echo pastIssues("issues/pdf"); ?>
+	</div>
 </div>
+
+<?php include "footer.php" ?>
+
+</body>
+</html>
