@@ -36,7 +36,7 @@ function pastIssues($pastDir){
 	foreach ($issueHeaders as $issueHead){
 
 			if (in_array($issueHead, $ignored)) continue;
-			echo '<div class="pastIssues '.$issueHead.'" id="">';
+			echo '<div class="pastIssues '.$issueHead.'">';
 			echo '<h1 class="issuesHeader">';
 			echo $issueHead;
 			echo '</h1>';

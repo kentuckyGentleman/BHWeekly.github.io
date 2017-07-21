@@ -20,9 +20,9 @@
 	<div class="navItems">
 	   	<div class="navItemsHolder">
 	   		<ul>
-	   	      <li><a class='navLinkOverlay' href="thisweek.php">This Week</a></li>
+	   	      <li><a class='navLinkOverlay' href="index.php">This Week</a></li>
 	   	      <li><a class='navLinkOverlay' href="staff.php">Staff</a></li>
-	   	      <li><a class='navLinkOverlay' href="">Past Issues</a></li>
+	   	      <li><a class='navLinkOverlay' href="pastissues.php">Past Issues</a></li>
 	   	      <li><a class='navLinkOverlay' href="contact.php">Contact</a></li>
 	   	    </ul>
 		</div>

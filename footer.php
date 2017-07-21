@@ -4,7 +4,7 @@
 		<div id="emailBanner" class="group">
 			<h1>Never miss an issue</h1>
 			<p class="footerText">
-				Sign up for Beverly Hills Weekly Email to be notified when the latest issue is hot off the presses.
+				Sign up for Beverly Hills Weekly Email to be notified when the latest issue is published.
 			</p>
 			<a class="button buttonSecondary" href="email.php">Sign Up</a>
 		</div>
@@ -12,7 +12,7 @@
 			<div class="footerNav">
 				<ul class="footerList">
 					<li><a href="index.php">This Week</a></li>
-					<li><a href="">Past Issues</a></li>
+					<li><a href="pastissues.php">Past Issues</a></li>
 					<li><a href="staff.php">Staff</a></li>
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
