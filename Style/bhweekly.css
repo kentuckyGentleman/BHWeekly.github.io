@@ -36,13 +36,8 @@
   overflow: hidden;
   text-align: center; }
   .sectionHeader h1 {
-    margin: 0 auto 15px auto;
+    margin: 0 auto 25px auto;
     max-width: 600px; }
-  .sectionHeader .contactHeadline {
-    margin-bottom: 50px !important; }
-  .sectionHeader h3 {
-    margin: 0 auto 50px auto;
-    max-width: 500px; }
 
 .sectionHeaderSecondary span {
   color: #0496ff; }
@@ -107,8 +102,9 @@
   width: 100px; }
 
 @media (min-width: 768px) {
-  .sectionHeaderInfo h1 {
-    padding: 186px 0 0 0; } }
+  .sectionHeader h1 {
+    padding: 186px 0 0 0;
+    margin-bottom: 50px; } }
 @media (min-width: 975px) {
   .sectionHeaderLogo {
     display: none; } }
@@ -172,10 +168,28 @@ a {
   text-decoration: none;
   display: block;
   -webkit-transition: all .50s ease-in-out;
+  -moz-transition: all .50s ease-in-out;
   transition: all .50s ease-in-out; }
 
 a:hover {
   color: #4a4a4a; }
+
+.textLink {
+  font-family: "Source Serif Pro", serif;
+  font-size: 18px;
+  color: #4a4a4a;
+  border-bottom: 2px solid #0496ff;
+  display: inline;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.textLink:hover {
+  color: #0496ff; }
+
+.linkCurrent {
+  color: #4a4a4a;
+  font-weight: 600; }
 
 .button {
   border-radius: 80px;
@@ -1229,7 +1243,7 @@ footer {
   width: 37%;
   font-size: 18px;
   border-bottom: 1px solid #b3b3b3;
-  padding: 25px 0 7px 0;
+  padding: 20px 0 7px 0;
   margin-right: 30px; }
 
 .backToTop {
@@ -1253,7 +1267,6 @@ footer {
     margin-bottom: 60px;
     margin-right: 50px; }
 
-  #2017
   .pastIssuesLink:nth-child(even) {
     margin-right: 0; } }
 @media (min-width: 900px) {
@@ -1268,4 +1281,7 @@ footer {
   .pastIssueLink:hover {
     background-color: #0496ff !important;
     color: white;
-    border-bottom: 1px solid #0496ff; } }
+    border-bottom: 1px solid #0496ff; }
+
+  .backtoTop {
+    display: none; } }
