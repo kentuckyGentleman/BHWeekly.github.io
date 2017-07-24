@@ -9,9 +9,6 @@
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
 			<h1>Reach thousands of people<br><span class="sectionHeaderBlue">every week.</span></h1>
-			<h3>
-				Since 1999, businesses throughout Los Angeles have turned to Beverly Hills Weekly to reach new customers.
-			</h3>
 			<div class="hrHeavy"></div>
 		</div>
 	</div>

@@ -9,9 +9,6 @@
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
 			<h1 class="contactHeadline">Contact us,<br><span class="sectionHeaderBlue">tips and feedback</span></h1>
-			<!-- <h3>
-				Tell us what’s on your mind and what’s going on in your neighborhood.
-			</h3> -->
 			<div class="hrHeavy"></div>
 		</div>
 	</div>

@@ -49,17 +49,8 @@
 	text-align: center;
 
 	h1{
-		margin: 0 auto 15px auto;
+		margin: 0 auto 25px auto;
 		max-width: 600px;
-	}
-
-	.contactHeadline{
-		margin-bottom: 50px !important;
-	}
-
-	h3{
-		margin: 0 auto 50px auto;
-		max-width: 500px;
 	}
 }
 
@@ -157,13 +148,13 @@
 // MEDIA QUERIES ------------------------------
 @media (min-width: 768px){
 
-	.sectionHeaderInfo{
+	.sectionHeader{
 
 		h1{
 			padding: 186px 0 0 0;
+			margin-bottom: 50px;
 		}
 	}
-
 }
 
 

@@ -11,10 +11,6 @@
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
 			<h1>Read Past Issues of <span class="sectionHeaderBlue">Beverly Hills Weekly</span></h1>
-			<h3>
-				We’ve covered everything Beverly Hills since 1999.  
-Relive important moments or get your dose of nostalgia.
-			</h3>
 			<div class="hrHeavy"></div>
 		</div>
 	</div>

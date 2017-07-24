@@ -9,9 +9,6 @@
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
 			<h1>Meet the Staff<br><span class="sectionHeaderBlue">of Beverly Hills Weekly</span></h1>
-			<h3>
-				Our team is dedicated to making sure you're up-to-date with what's happening in your neighborhood
-			</h3>
 			<div class="hrHeavy"></div>
 		</div>
 	</div>
@@ -20,7 +17,7 @@
 <div class="container">
 	<div class="indStaffContainer group">
 		<div class="indStaffHeader">
-			<img class="staffPortrait" src="img/staff/herbertPortrait.png">
+			<img class="staffPortrait" src="img/staff/herbertPortrait_color.png">
 			<h1>Steven Herbert</h1>
 			<h3>Sports Editor</h3>
 			<div class="hrLight"></div>
@@ -36,7 +33,7 @@
 	</div>
 </div>
 
-<a href="oliviaanderson.php" class="meetNext">
+<a href="joshgross.php" class="meetNext">
 	<div class="container">
 		<h2>Next, meet</h2>
 			<div class="meetNextPerson">

@@ -9,9 +9,6 @@
 				<img src="img/logo/bhWeekly_horizontal.png">
 			</div>
 			<h1>Meet the Staff of<br><span class="sectionHeaderBlue">Beverly Hills Weekly</span></h1>
-			<h3>
-				Our team is dedicated to making sure you're up-to-date with what's happening in your neighborhood.
-			</h3>
 			<div class="hrHeavy"></div>
 		</div>
 	</div>
@@ -19,10 +16,9 @@
 
 <div class="container">
 	<div class="staffMembers">
-		<!-- <h2 class="staffHeader">Your Neighborhood Team</h2> -->
 		<div class="staffInd">
 			<img class="staffPortrait" src="img/staff/grossPortrait_bw.png">
-			<h2>CEO & Publisher</h2>
+			<h2>CEO &amp; Publisher</h2>
 			<h3>Josh Gross</h3>
 			<div class="hrHeavy"></div>
 			<p>
