@@ -7,8 +7,8 @@
 <div class="homeNavContainer">
 	<div class="homeServingButtons">
 		<div class="navSubAd">
-			<a class="button buttonSecondary" href="subscribe.php">Subscribe</a>
-		  	<a class="button buttonMain" href="advertise.php">Advertise with us</a>
+			<a class="button buttonSecondary" href="/subscribe.php">Subscribe</a>
+		  	<a class="button buttonMain" href="/advertise.php">Advertise with us</a>
 		</div>
 		<div class="logoServingContainer">
 			<img src="img/logo/serving.png">
@@ -20,10 +20,10 @@
 	<div class="navItems">
 	   	<div class="navItemsHolder">
 	   		<ul>
-	   	      <li><a class='navLinkOverlay linkCurrent' href="index.php">This Week</a></li>
-	   	      <li><a class='navLinkOverlay' href="staff.php">Staff</a></li>
-	   	      <li><a class='navLinkOverlay' href="pastissues.php">Past Issues</a></li>
-	   	      <li><a class='navLinkOverlay' href="contact.php">Contact</a></li>
+	   	      <li><a class='navLinkOverlay linkCurrent' href="/">This Week</a></li>
+	   	      <li><a class='navLinkOverlay' href="/bhweeklystaff.php">Staff</a></li>
+	   	      <li><a class='navLinkOverlay' href="/pastissues.php">Past Issues</a></li>
+	   	      <li><a class='navLinkOverlay' href="/contact.php">Contact</a></li>
 	   	    </ul>
 		</div>
    	</div>
@@ -34,10 +34,7 @@
 	<!-- Header -->
 	<div class="homeContainer">
 		<div class="homeHeader">
-			<h1>Read <span>this week's issue</span></h1>
-			<p>
-				Everything you need to know about your neighborhood is in this week’s edition of Beverly Hills Weekly.
-			</p>
+			<h1>Read <span>this week&rsquo;s issue</span></h1>
 		</div>
 		<div class="recentIssue">
 			<div class="recentIssueImage">
