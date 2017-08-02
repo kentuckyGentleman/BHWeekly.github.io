@@ -34,13 +34,13 @@
 	<!-- Header -->
 	<div class="homeContainer">
 		<div class="homeHeader">
-			<h1>Read <span>this week&rsquo;s issue</span></h1>
+			<h1>Read <span>this week&rsquo;s issue.</span></h1>
 		</div>
 		<div class="recentIssue">
 			<div class="recentIssueImage">
 				<a class="issueLink" href="<?php echo issuePreview("issues/pdf"); ?>" target="_blank"><img src="<?php echo issuePreview("issues/preview"); ?>"/></a>
 			</div>
-			<a class="button buttonMain buttonHome" href="<?php echo issuePreview("issues/pdf"); ?>" target="_blank">Read this week's issue</a>
+			<a href="<?php echo issuePreview("issues/pdf"); ?>" target="_blank">Read now</a>
 		</div>
 	</div>
 </div>
